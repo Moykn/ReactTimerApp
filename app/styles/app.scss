@@ -1,0 +1,5 @@
+@import "base/variables";
+@import "components/navigation";
+.menu a.is-active {
+    font-weight: bold;
+}
