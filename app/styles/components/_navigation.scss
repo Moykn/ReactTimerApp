@@ -11,4 +11,7 @@
         display: inline;
         padding: 0;
     }
+    .menu a.is-active {
+        font-weight: bold;
+    }
 }
