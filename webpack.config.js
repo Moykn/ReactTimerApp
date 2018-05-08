@@ -47,7 +47,8 @@ module.exports = {
       Navigation: "app/components/Navigation",
       Countdown: "app/components/Countdown",
       Timer: "app/components/Timer",
-      Clock: "app/components/Clock"
+      Clock: "app/components/Clock",
+      CountdownForm: "app/components/CountdownForm"
     },
     extensions: [".json", ".js", ".jsx", ".css", ".scss"]
   },
