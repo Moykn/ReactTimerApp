@@ -46,7 +46,8 @@ module.exports = {
       applicationStyles: "app/styles/app",
       Navigation: "app/components/Navigation",
       Countdown: "app/components/Countdown",
-      Timer: "app/components/Timer"
+      Timer: "app/components/Timer",
+      Clock: "app/components/Clock"
     },
     extensions: [".json", ".js", ".jsx", ".css", ".scss"]
   },
