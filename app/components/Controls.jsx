@@ -11,6 +11,7 @@ export default class Controls extends Component {
       this.props.onStatusChange(newStatus);
     };
   };
+
   render() {
     const { countdownStatus } = this.props;
     const renderStartStopButon = () => {

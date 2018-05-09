@@ -26,12 +26,20 @@ export default class Countdown extends Component {
       }
     }
   };
+  componentWillMount = () => {
+    clearInterval(this.timer);
+    delete this.timer;
+  };
   startTimer = () => {
     this.timer = setInterval(() => {
       const newCount = this.state.count - 1;
       this.setState({
         count: newCount >= 0 ? newCount : 0
       });
+
+      if (newCount === 0) {
+        this.setState({ countdownStatus: "stopped" });
+      }
     }, 1000);
   };
   handleSetCountdown = seconds => {
@@ -46,7 +54,6 @@ export default class Countdown extends Component {
       countdownStatus: newStatus
     });
   };
-
   render() {
     const { count, countdownStatus } = this.state;
     const renderControlArea = () => {
