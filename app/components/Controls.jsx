@@ -17,7 +17,7 @@ export default class Controls extends Component {
       if (countdownStatus === "started") {
         return (
           <button
-            className="button secondary"
+            className="hollow button secondary"
             onClick={this.onStatusChange("paused")}
           >
             Pause
@@ -26,7 +26,7 @@ export default class Controls extends Component {
       } else if (countdownStatus === "paused") {
         return (
           <button
-            className="button primary"
+            className="hollow button primary"
             onClick={this.onStatusChange("started")}
           >
             Start
