@@ -6,7 +6,8 @@ export default class CountdownForm extends Component {
   onSubmitHandler = e => {
     e.preventDefault();
     const strSeconds = this.input.value;
-    if (/^\d*$/.test(strSeconds)) {
+
+    if (/^\d+$/.test(strSeconds)) {
       this.input.value = "";
       this.props.onSetCountdown(Number(strSeconds));
     }
