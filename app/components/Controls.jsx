@@ -24,7 +24,7 @@ export default class Controls extends Component {
             Pause
           </button>
         );
-      } else if (countdownStatus === "paused") {
+      } else {
         return (
           <button
             className="hollow button primary"
